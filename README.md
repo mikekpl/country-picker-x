@@ -3,6 +3,8 @@ Country Picker X
 
 A helpful and customizable Country Picker for your needs.
 
+![device-2016-09-22-134039](https://cloud.githubusercontent.com/assets/16832215/18738030/600bf0c0-80ca-11e6-97b2-0fff48ec1ba5.png)
+
 Gradle
 
 ```java
@@ -18,7 +20,9 @@ Gradle
 Sample Usage:
 
 ```java
-	int resourceId = getResources().getIdentifier("country_avail", "raw", getApplicationContext().getPackageName());
+  /* Name of your Custom JSON list */
+  int resourceId = getResources().getIdentifier("country_avail", "raw", getApplicationContext().getPackageName());
+  
   CountryPickerDialog countryPicker =
       new CountryPickerDialog(MainActivity.this, new CountryPickerCallbacks() {
           @Override
@@ -27,7 +31,8 @@ Sample Usage:
           }
           
           /* Set to false if you want to disable Dial Code in the results and true if you want to show it 
-             Set to zero if you don't have a custom JSON list of countries in your raw file */
+             Set to zero if you don't have a custom JSON list of countries in your raw file otherwise use resourceId
+             for your customly available countries */
       }, false, 0);
   countryPicker.show();
 ```
