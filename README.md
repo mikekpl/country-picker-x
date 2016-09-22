@@ -31,8 +31,8 @@ Sample Usage:
           }
           
           /* Set to false if you want to disable Dial Code in the results and true if you want to show it 
-             Set to zero if you don't have a custom JSON list of countries in your raw file otherwise use resourceId
-             for your customly available countries */
+             Set to zero if you don't have a custom JSON list of countries in your raw file otherwise use 
+             resourceId for your customly available countries */
       }, false, 0);
   countryPicker.show();
 ```
@@ -41,7 +41,7 @@ Sample format of JSON list of countries
 Arranged in format with Country Code : Dial Code
 
 ```javascript
-	{
+  {
     "ID" : "62",
     "PH" : "63",
     "VN" : "84"
