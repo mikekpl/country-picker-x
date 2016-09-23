@@ -20,14 +20,17 @@ Gradle
 Sample Usage:
 
 ```java
+  /* Declare */
+  CountryPickerDialog countryPicker;
+  
   /* Name of your Custom JSON list */
   int resourceId = getResources().getIdentifier("country_avail", "raw", getApplicationContext().getPackageName());
   
-  CountryPickerDialog countryPicker =
-      new CountryPickerDialog(MainActivity.this, new CountryPickerCallbacks() {
+  countryPicker = new CountryPickerDialog(MainActivity.this, new CountryPickerCallbacks() {
           @Override
           public void onCountrySelected(Country country, int flagResId) {
                 /* Get Country Name: country.getCountryName(context); */
+                /* Call countryPicker.dismiss(); to prevent memory leaks */
           }
           
           /* Set to false if you want to disable Dial Code in the results and true if you want to show it 
