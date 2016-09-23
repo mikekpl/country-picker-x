@@ -47,3 +47,5 @@ Arranged in format with Country Code : Dial Code
     "VN" : "84"
   }
 ```
+
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-country--picker--x-green.svg?style=true)](https://android-arsenal.com/details/1/4390)
